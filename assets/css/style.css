@@ -1,0 +1,81 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+/*-------------------- HEADER -------------------------*/
+header {
+    width: 100%;    
+    
+    #header-main{
+        margin: auto;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #header-main-logo {
+        color: #005C53;
+        text-align: center;
+        h1 {
+            font-size: 2rem;
+        }
+    }
+
+    #header-main-pages {
+        ul{
+            display: flex;
+            list-style: none;
+            li{
+                padding: 0.5rem;
+                font-size: 1.5rem;
+
+                a{
+                    text-decoration: none;
+                    color: #042940;
+                    padding-bottom: 0.5rem;
+                    font-weight: 200;
+                }
+
+                a:hover{
+                    color: #9FC131;
+                    border-bottom: 1px solid #9FC131;
+                }
+
+                .isAlive {
+                    color: #9FC131;
+                    border-bottom: 1px solid #9FC131;
+                }
+            }
+        }
+    }
+}
+
+/*-------------------- MAIN -------------------------*/
+
+.banners {
+    margin: auto;
+    .banner-container{
+        background-image: url('../img/riodejaneirobanner.jpg');
+        width: 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+/*-------------------- FOOTER -------------------------*/
+
+/*-------------------- BASES -------------------------*/
+
+a{
+    text-decoration: none;
+}
+
+main{
+    width: 100%;
+}
+
+section{
+    width: 80%;
+}
+
