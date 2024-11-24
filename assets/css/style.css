@@ -2,13 +2,14 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-  }
-  
+}
+
 /*-------------------- HEADER -------------------------*/
 header {
-    width: 100%;    
-    
-    #header-main{
+    width: 100%;
+    background-color: #ebebdc;
+
+    #header-main {
         margin: auto;
         width: 80%;
         display: flex;
@@ -18,27 +19,29 @@ header {
     #header-main-logo {
         color: #005C53;
         text-align: center;
+
         h1 {
             font-size: 2rem;
         }
     }
 
     #header-main-pages {
-        ul{
+        ul {
             display: flex;
             list-style: none;
-            li{
-                padding: 0.5rem;
-                font-size: 1.5rem;
 
-                a{
+            li {
+                padding: 0.5rem;
+                font-size: 1.2rem;
+
+                a {
                     text-decoration: none;
                     color: #042940;
                     padding-bottom: 0.5rem;
                     font-weight: 200;
                 }
 
-                a:hover{
+                a:hover {
                     color: #9FC131;
                     border-bottom: 1px solid #9FC131;
                 }
@@ -54,28 +57,179 @@ header {
 
 /*-------------------- MAIN -------------------------*/
 
-.banners {
-    margin: auto;
-    .banner-container{
+main {
+    #banners {
+        height: 550px;
+        padding: 1rem 1rem;
+
+        .banner-container {
+            background-image: url('../img/riodejaneirobanner.jpg');
+            width: 100%;
+            height: 550px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 20px;
+            animation: changeBackground 16s infinite;
+        }
+    }
+
+    #destinos {
+        padding-bottom: 1rem;
+
+        h2 {
+            text-align: center;
+            font-size: 1.5rem;
+            color: #005C53;
+        }
+
+        #destino-content {
+            display: block;
+
+
+            .destino-cards {
+                display: flex;
+                padding: 0.2rem;
+
+                img {
+                    width: 50%;
+                    border-radius: 20px;
+                }
+
+                div {
+                    display: flex;
+                }
+
+                .destino-texts {
+                    display: block;
+                    font-size: 0.8rem;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    text-align: justify;
+
+                    h3 {
+                        color: #042940;
+                        text-align: center;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    #contatos {
+        h2 {
+            text-align: center;
+            font-size: 1.5rem;
+            color: #005C53;
+        }
+
+        form {
+            margin: auto;
+            width: 75%;
+            padding-bottom: 1rem;
+
+            .form-contato {
+                margin-bottom: 1rem;
+                display: block;
+
+                label {
+                    color: #333;
+                    margin-bottom: 5px;
+                    display: block;
+                }
+
+                input {
+                    width: 100%;
+                    padding: 1rem;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    transition: 0.5s;
+                }
+
+                input:focus {
+                    border-color: #005C53;
+                }
+            }
+
+            button {
+                display: flex;
+                margin: 20px auto 0;
+                padding: 12px;
+                font-size: 1rem;
+                background-color: #005C53;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                text-align: center;
+            }
+
+            button:hover {
+                background-color: #042940;
+            }
+        }
+    }
+}
+
+@keyframes changeBackground {
+    0% {
         background-image: url('../img/riodejaneirobanner.jpg');
-        width: 100%;
-        background-repeat: no-repeat;
+    }
+
+    35% {
+        background-image: url('../img/foz.jpg');
+    }
+
+    70% {
+        background-image: url('../img/lencois.webp');
+    }
+
+    100% {
+        background-image: url('../img/noronha.webp');
     }
 }
 
 /*-------------------- FOOTER -------------------------*/
 
-/*-------------------- BASES -------------------------*/
+footer {
+    height: 100%;
+    background-color: #ebebdc;
+    padding: 1rem;
 
-a{
-    text-decoration: none;
+    .footers {
+        width: 80%;
+        font-size: 0.8rem;
+        text-align: center;
+        margin: auto;
+
+
+        .footer-text {
+            justify-content: space-between;
+            width: 100%;
+            margin: auto;
+
+            iframe {
+                border: 2px solid #042940;
+                border-radius: 10px;
+            }
+        }
+    }
 }
 
-main{
+/*-------------------- BASES -------------------------*/
+
+a {
+    text-decoration: none;
+    color: #005C53;
+}
+
+main {
     width: 100%;
 }
 
-section{
+section {
     width: 80%;
+    margin: auto;
 }
-
