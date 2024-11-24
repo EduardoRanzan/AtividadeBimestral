@@ -7,7 +7,6 @@ body {
 /*-------------------- HEADER -------------------------*/
 header {
     width: 100%;
-    background-color: #ebebdc;
 
     #header-main {
         margin: auto;
@@ -98,6 +97,16 @@ main {
 
                 div {
                     display: flex;
+                }
+
+                a {
+                   color: #042940;
+                }
+
+                a:hover{
+                    color: #005C53;
+                    transition: 0.5s;
+                    font-size: 1.3rem;
                 }
 
                 .destino-texts {
